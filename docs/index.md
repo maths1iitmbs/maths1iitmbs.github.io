@@ -20,11 +20,11 @@ The content presented here has been drawn from the lectures, live sessions, and 
 
 | Week | Link |
 | :--- | :--- |
-| Week-1 | [week-1.md](./notes/week-1.md) |
+| Week-1 | [Link](./notes/week-1.md) |
 
 ## Extra Resources
 
 | Content | Link |
 | :--- | :--- |
-| PYQs | [main.md](./pyqs/main.md) |
-| Combined AQ+PA | [combined.md](./pyqs/combined.md) |
+| PYQs | [Link](./pyqs/main.md) |
+| Combined AQ+PA | [Link](./pyqs/combined.md) |
