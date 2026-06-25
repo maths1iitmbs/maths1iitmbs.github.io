@@ -8,7 +8,7 @@
 # Week 1 Notes
 
 <div style="text-align: right; margin-bottom: 10px;">
-  <a href="../week-1.pdf" download class="md-button md-button--primary">⬇️ Download PDF</a>
+  <a href="../week_1_notes.pdf" download class="md-button md-button--primary">⬇️ Download PDF</a>
 </div>
 
 <div id="loading-msg">Loading PDF... Please wait.</div>
