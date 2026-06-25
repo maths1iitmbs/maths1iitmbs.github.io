@@ -5,7 +5,9 @@
   }
 </style>
 
+# Week 1 Notes
+
 <iframe src="week_1_notes.pdf" style="width: 100%; height: 85vh; border: none;">
-    This browser does not support PDFs. Please download the PDF to view it: <a href="week_1_notes.pdf">Download PDF</a>.
+    This browser does not support PDFs. Please download the PDF to view it: <a href="week_1notes.pdf">Download PDF</a>.
 </iframe>
 
