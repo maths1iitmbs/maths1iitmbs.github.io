@@ -15,6 +15,24 @@
 
 The content presented here has been drawn from the lectures, live sessions, and materials for the Maths 1 course. This content serves as a centralized hub for notes, PYQs, and session links. If any errors are found in this document, please reach out or open an issue.
 
+<style>
+  table {
+    width: 100%;
+    margin-bottom: 2em;
+    border-collapse: collapse;
+  }
+  th {
+    background-color: #f4f6f8;
+    font-size: 1.05em;
+    color: #3f51b5;
+  }
+  td, th {
+    padding: 14px 16px !important;
+  }
+  tr:hover {
+    background-color: #f9f9f9;
+  }
+</style>
 
 ## Notes by Vishal Sir
 
