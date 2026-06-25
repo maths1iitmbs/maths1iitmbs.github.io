@@ -62,9 +62,10 @@ pdfjsLib.getDocument(url).promise.then(function(pdf) {
       canvas.width = Math.floor(viewport.width * outputScale);
       canvas.height = Math.floor(viewport.height * outputScale);
       
-      // Maintain proper CSS display size
-      canvas.style.width = Math.floor(viewport.width) + "px";
-      canvas.style.height = Math.floor(viewport.height) + "px";
+      // Maintain proper CSS display size and aspect ratio
+      canvas.style.width = "100%";
+      canvas.style.maxWidth = Math.floor(page.getViewport({scale: 1.5}).width) + "px";
+      canvas.style.height = "auto";
       
       let renderContext = {
         canvasContext: canvas.getContext('2d'),
