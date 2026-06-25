@@ -49,13 +49,22 @@ pdfjsLib.getDocument(url).promise.then(function(pdf) {
     container.appendChild(canvas);
 
     pdf.getPage(pageNum).then(function(page) {
-      // Scale controls resolution (1.5 provides good crispness on standard screens)
-      let viewport = page.getViewport({ scale: 1.5 });
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
+      let baseScale = 1.5;
+      let viewport = page.getViewport({ scale: baseScale });
+      
+      // Fix blurriness on high-resolution/retina displays
+      let outputScale = window.devicePixelRatio || 1;
+      
+      canvas.width = Math.floor(viewport.width * outputScale);
+      canvas.height = Math.floor(viewport.height * outputScale);
+      
+      // Maintain proper CSS display size
+      canvas.style.width = Math.floor(viewport.width) + "px";
+      canvas.style.height = Math.floor(viewport.height) + "px";
       
       let renderContext = {
         canvasContext: canvas.getContext('2d'),
+        transform: [outputScale, 0, 0, outputScale, 0, 0],
         viewport: viewport
       };
       page.render(renderContext);
