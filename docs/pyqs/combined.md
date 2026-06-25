@@ -7,6 +7,10 @@
 
 # Combined AQ+PA Book
 
+<div style="text-align: right; margin-bottom: 10px;">
+  <a href="../AQ_PA_combined (1).pdf" download class="md-button md-button--primary">⬇️ Download PDF</a>
+</div>
+
 <div id="loading-msg">Loading PDF... Please wait.</div>
 <div id="pdf-container"></div>
 
@@ -48,7 +52,8 @@ pdfjsLib.getDocument(url).promise.then(function(pdf) {
     container.appendChild(canvas);
 
     pdf.getPage(pageNum).then(function(page) {
-      let baseScale = 1.5;
+      // Render at a high base scale so it stays sharp when zooming in
+      let baseScale = 3.0;
       let viewport = page.getViewport({ scale: baseScale });
       
       // Fix blurriness on high-resolution/retina displays
@@ -72,4 +77,5 @@ pdfjsLib.getDocument(url).promise.then(function(pdf) {
 }).catch(function(err) {
   loadingMsg.innerHTML = 'Error loading PDF. <a href="' + url + '">Download PDF</a>';
 });
+</script>
 </script>
