@@ -39,6 +39,10 @@ The content presented here has been drawn from the lectures, live sessions, and 
 | Week | Link |
 | :--- | :--- |
 | Week-1 | [Link](./notes/week-1.md) |
+| Week-2 | [Link](./notes/week-2.md) |
+| Week-3 | [Link](./notes/week-3.md) |
+| Week-4 | [Link](./notes/week-4.md) |
+
 
 ## Extra Resources
 
