@@ -5,10 +5,10 @@
   }
 </style>
 
-# Week 2 Notes
+# Week 4 Notes
 
 <div style="text-align: right; margin-bottom: 10px;">
-  <a href="../week_2_notes.pdf" download class="md-button md-button--primary">⬇️ Download PDF</a>
+  <a href="../week_4_notes.pdf" download class="md-button md-button--primary">⬇️ Download PDF</a>
 </div>
 
 <div id="loading-msg">Loading PDF... Please wait.</div>
@@ -39,7 +39,7 @@
 <script>
 pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.worker.min.js';
 
-var url = '../week_2_notes.pdf';
+var url = '../week_4_notes.pdf';
 var container = document.getElementById('pdf-container');
 var loadingMsg = document.getElementById('loading-msg');
 
